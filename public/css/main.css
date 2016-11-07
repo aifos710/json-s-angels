@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+}
+
+/*index*/
+
+.bg{
+	background-image: url(../img/fondo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	padding-top: 20px;
+}
+
+.btns{
+	width: 100%;
+	position: absolute;
+	bottom: 70px;
+}
+
+.btnCta{
+	color:#fff;
+	background-color: #46A08A;
+	border-radius: 5pc;
+	border:transparent;
+}
+
+.next{
+	position: absolute;
+	bottom: 0;
+	width: 100%;	
+}
+
+.nextt{
+	background-color: #46A08A;
+	display: inline-block;
+	width: 100%;
+	padding:20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
