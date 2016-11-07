@@ -19,6 +19,9 @@
 					<input type="email" class="email form-control" id="" placeholder="Email">
 			  	</div>
 			</form>
+			<fb:login-button id="login" type="button" onlogin="window.location = 'buscador.html'">
+            Inicia sesión con Facebook
+        </fb:login-button>
 		</div>
 		<div class="text-center next">
 			<a id="next3" class="nextt">Next</a>
@@ -26,6 +29,16 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script>
+		// Load the SDK asynchronously
+		  (function(d, s, id) {
+		    var js, fjs = d.getElementsByTagName(s)[0];
+		    if (d.getElementById(id)) return;
+		    js = d.createElement(s); js.id = id;
+		    js.src = "https://connect.facebook.net/en_US/sdk.js";
+		    fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+		 </script>
 	</body>
 </html>
 
