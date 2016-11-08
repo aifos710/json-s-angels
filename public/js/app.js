@@ -1,33 +1,5 @@
 $(document).ready(function(){
-<<<<<<< HEAD
   
-  $("#nombre").focus();
-  $("#nombre").keydown(validarNombreAp);
-  $("#next3").click(validarDatos);
-
-  function validarNombreAp(evento){
-      var ascii = evento.keyCode;
-      if (ascii == 8 || ascii == 32 || (ascii >= 65 && ascii <= 90 )|| (ascii >= 97 && ascii <= 122 )) {
-        return true;
-      }else {
-        return false;
-      }
-    }
-
-    function validarDatos(){
-        var email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        var dni = $(".dni").val().length;
-    var mail = $(".email").val().length;
-        var correo =$(".email").val().trim();
-        if (email.test(correo) && (dni >= 2 && dni <= 20)  && (mail >= 5 && mail <= 50)) {
-          $(this).attr("href", "buscador.html");
-        } else{
-          $("#next3 ").removeAttr("href");
-          alert("Por favor, llena tus datos")
-        }
-  }
-=======
-	
 	$("#nombre").focus();
 	$("#nombre").keydown(validarNombreAp);
 	$("#next3").click(validarDatos);
@@ -53,13 +25,10 @@ $(document).ready(function(){
         	alert("Por favor, llena tus datos")
         }
 	}
->>>>>>> c13223c61fa670d88d78c0753951df93f8d2f169
 
   var app_id = '1850360375199136';
   var scopes = '';
-
   var btn_login = '<a href="#" id="login" class="btn btn-primary">Iniciar sesión</a>';
-
   var div_session = "<div id='facebook-session'>"+
             "<strong></strong>"+
             "<img>"+
