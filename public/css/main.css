@@ -1,7 +1,6 @@
 *{
 	box-sizing: border-box;
 }
-
 /*index*/
 .bg{
 	background-image: url(../img/resize-img.jpg);
@@ -73,4 +72,24 @@
 
 .m-46{
 	margin-top: 46%;
+}
+/*música*/
+.foto-perfil{
+	width: 80%;
+	height: auto;
+	border-radius: 50%;
+	margin: 16px auto 0 auto;
+}
+.foto-perfil img{
+	width: 100%;
+	height: auto;
+}
+.buscador{
+	margin: 8% 0 0 0;
+}
+.cancion-sugerencia{
+	width: 100%;
+	height: 70px;
+	margin-bottom: 15px;
+	background-color: black;
 }
