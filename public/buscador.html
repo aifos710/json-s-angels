@@ -20,7 +20,7 @@
 					<form id="search-form">
 						<div class="input-group buscador">
 							<span class="input-group-addon" id="buscar"><i class="glyphicon glyphicon-search"></i></span>
-							<input type="text" id="query" class="form-control" placeholder="Ingresa el nombre de tu artista...">
+							<input type="text" id="query" class="form-control" placeholder="Busca tu artista">
 							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-headphones"></i></span>
 						</div>
 					</form>
@@ -55,6 +55,35 @@
 				</div>
 			</div>
 		</div>
+		<div class="absolute none"></div>
+		<div id="menu" class="none">
+			<div class="contenedor foto-perfil">
+				<a href="perfil.html">
+					<img src="img/user.svg" class="user" id="user">
+				</a>
+			</div>
+			<span id="name-user"></span>
+			<a href="perfil.html" class="ver">View Profile</a>
+			<div class="lista" id="map">
+				<span class="glyphicon glyphicon-home menu-icono" aria-hidden="true"></span>Home
+			</div>
+			<div class="lista regalo-1">
+				<span class="glyphicon glyphicon-gift regalo" aria-hidden="true"></span>Free Rides
+			</div>
+			<div class="lista">
+				<span class="glyphicon glyphicon-time menu-icono" aria-hidden="true"></span>Ride History
+			</div>
+			<div class="lista">
+				<span class="glyphicon glyphicon-credit-card menu-icono" aria-hidden="true"></span>Payment
+			</div>
+			<div class="lista">
+				<span class="glyphicon glyphicon-question-sign menu-icono" aria-hidden="true"></span>Help
+			</div>
+			<div class="lista">
+				<span class="glyphicon glyphicon-cog menu-icono" aria-hidden="true"></span>Settings
+			</div>
+		</div>
+
 		<script type="text/javascript" src="js/handlebars-v4.0.0.js"></script>
 		<script type="text/x-handlebars-template" id="resultados-template">
 {{#each albums.items}}
