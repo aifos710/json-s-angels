@@ -83,6 +83,7 @@
 .foto-perfil img{
 	width: 100%;
 	height: auto;
+	border-radius: 50%;
 }
 .buscador{
 	margin: 8% 0 0 0;
@@ -92,4 +93,32 @@
 	height: 70px;
 	margin-bottom: 15px;
 	background-color: black;
+}
+
+.none{
+	display: none;
+}
+
+.absolute{
+	background-color: rgba(0,0,0,.6);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.none{
+	display: none;
+}
+
+#menu{
+	position: absolute;
+	top: 0;
+	bottom: 0px;
+	right: 40%;
+	left: 0;
+	background-color: white;
+	z-index: 3;
 }
