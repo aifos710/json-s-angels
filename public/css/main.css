@@ -1,7 +1,10 @@
 *{
 	box-sizing: border-box;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8673851e534d6f6335175d713ba7a2c877a3213a
 /*index*/
 .bg{
 	background-image: url(../img/resize-img.jpg);
@@ -67,6 +70,7 @@
 	background-color: #46a08a;
 	border-color: 1px white;
 }
+<<<<<<< HEAD
 
 /*-- Search --*/
 #search-form, .form-control {
@@ -88,6 +92,8 @@
     border: 5px solid #e45343;
 }
 
+=======
+>>>>>>> 8673851e534d6f6335175d713ba7a2c877a3213a
 /*música*/
 .foto-perfil{
 	width: 80%;
@@ -108,4 +114,32 @@
 	margin-bottom: 15px;
 	background-color: black;
 }
+<<<<<<< HEAD
 
+=======
+/*-- Search --*/
+#search-form, .form-control {
+	margin-bottom: 20px;
+}
+
+.cover {
+	width: 130px;
+	height: 130px;
+	display: inline-block;
+	background-size: cover;
+}
+
+.cover:hover {
+	cursor: pointer;
+}
+
+.cover.playing {
+	border: 5px solid #46A08A;
+}
+.titulo-sugerencias{
+	margin: 10px 0 15px 0;
+}
+.row-resultados{
+	margin-top: 5px;
+}
+>>>>>>> 8673851e534d6f6335175d713ba7a2c877a3213a
