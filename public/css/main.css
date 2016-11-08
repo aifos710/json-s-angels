@@ -1,10 +1,7 @@
 *{
 	box-sizing: border-box;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 8673851e534d6f6335175d713ba7a2c877a3213a
 /*index*/
 .bg{
 	background-image: url(../img/resize-img.jpg);
@@ -70,9 +67,7 @@
 	background-color: #46a08a;
 	border-color: 1px white;
 }
-<<<<<<< HEAD
 
-/*-- Search --*/
 #search-form, .form-control {
     margin-bottom: 20px;
 }
@@ -92,8 +87,6 @@
     border: 5px solid #e45343;
 }
 
-=======
->>>>>>> 8673851e534d6f6335175d713ba7a2c877a3213a
 /*música*/
 .foto-perfil{
 	width: 80%;
@@ -114,9 +107,7 @@
 	margin-bottom: 15px;
 	background-color: black;
 }
-<<<<<<< HEAD
 
-=======
 /*-- Search --*/
 #search-form, .form-control {
 	margin-bottom: 20px;
@@ -142,4 +133,74 @@
 .row-resultados{
 	margin-top: 5px;
 }
->>>>>>> 8673851e534d6f6335175d713ba7a2c877a3213a
+
+.main {
+    flex: 1;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+ul {
+    margin-left: 30px;
+}
+.action, .recognized {
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    width:80%;
+}
+.action {
+    text-align: right;
+    background-color: #ddd;
+    margin-left:20%;
+    border-radius: 5px 5px 0 5px;
+}
+.action:after {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 18px;
+    border-style: solid;
+    border-color: transparent transparent #ddd transparent;
+    bottom: 0px;
+    right: -17px;
+}
+.recognized {
+    text-align: left;
+    background-color: #eee;
+    font-weight: bold;
+    border-radius: 5px 5px 5px 0;
+}
+.recognized:after {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 18px;
+    border-style: solid;
+    border-color: transparent transparent #eee transparent;
+    bottom: 0px;
+    left: -17px;
+}
+.recognized > div:before {
+    content: open-quote
+}
+.recognized > div:after {
+    content: close-quote
+}
+#conversation {
+    padding: 20px;
+}
+#conversation::before {
+    content:"";
+    height: 1px;
+    width: 200px;
+    background-color: #ddd;
+    display: block;
+    margin: 10px auto;
+}
+#conversation img {
+    margin-top: 5px;
+}
