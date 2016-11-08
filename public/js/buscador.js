@@ -46,7 +46,13 @@ resultados.addEventListener('click', function (e) {
 		}
 	}
 });
-document.getElementById('search-form').addEventListener('click', function (e) {
+document.getElementById('buscar').addEventListener('click', function (e) {
 	e.preventDefault();
 	searchAlbums(document.getElementById('query').value);
+	document.getElementById('query').value="";
+}, false);
+document.getElementById('search-form').addEventListener('submit', function (e) {
+	e.preventDefault();
+	searchAlbums(document.getElementById('query').value);
+	document.getElementById('query').value="";
 }, false);
