@@ -47,6 +47,7 @@
 					<fb:login-button id="login" type="button" onlogin="window.location = 'buscador.html'" data-size="large">
 						Inicia sesión con Facebook
 					</fb:login-button>
+					<button class="btn btn-primary" id="btn-login">Login</button>
 				</div>
 			</div>
 		</div>
@@ -56,6 +57,25 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script id="result-template" type="text/x-handlebars-template">
+			<dl>
+			  <img src="{{images.0.url}}">
+			  <dt>User Name</dt>
+			  <dd>{{id}}</dd>
+			  <dt>Display Name</dt>
+			  <dd>{{display_name}}</dd>
+			  <dt>Country</dt>
+			  <dd>{{country}}</dd>
+			  <dt>Followers</dt>
+			  <dd>{{followers.total}}</dd>
+			  <dt>Profile</dt>
+			  <dd><a href="{{external_urls.spotify}}" target="_blank">{{external_urls.spotify}}</a></dd>
+			  <dt>Email</dt>
+			  <dd>{{email}}</dd>
+			  <dt>Product</dt>
+			  <dd>{{product}}</dd>
+			</dl>
+		</script>
 		<script>
 		// Load the SDK asynchronously
 		  (function(d, s, id) {
