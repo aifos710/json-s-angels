@@ -86,3 +86,28 @@
 	margin-bottom: 15px;
 	background-color: black;
 }
+/*-- Search --*/
+#search-form, .form-control {
+	margin-bottom: 20px;
+}
+
+.cover {
+	width: 130px;
+	height: 130px;
+	display: inline-block;
+	background-size: cover;
+}
+
+.cover:hover {
+	cursor: pointer;
+}
+
+.cover.playing {
+	border: 5px solid #46A08A;
+}
+.titulo-sugerencias{
+	margin: 10px 0 15px 0;
+}
+.row-resultados{
+	margin-top: 5px;
+}
