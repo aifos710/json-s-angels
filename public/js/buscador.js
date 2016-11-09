@@ -56,6 +56,8 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 	searchAlbums(document.getElementById('query').value);
 	document.getElementById('query').value="";
 }, false);
+
+
 (function () {
 	var audio = new Audio();
 	function searchTracks(query) {
@@ -113,7 +115,7 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 			},
 				':nomatch': function (message) {
 				recognized(message);
-				communicateAction('Sorry, I don\'t understand this action');
+				communicateAction('Lo siento, no te entiendo. :c');
 			}
 		};
 		annyang.addCommands(commands);
