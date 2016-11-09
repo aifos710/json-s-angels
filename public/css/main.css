@@ -23,6 +23,13 @@
 	height: 100vh;
 	position: relative;
 }
+.bg-black{
+	background-color: black;
+}
+.frase{
+	font-family: 'Architects Daughter', cursive;
+	color: white;
+}
 .btns{
 	width: 100%;
 	position: absolute;
@@ -79,7 +86,7 @@
 }
 
 .mt{
-	margin: 10% 0;
+	margin: 5% 0;
 }
 
 .m-46{
