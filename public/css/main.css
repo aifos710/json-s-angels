@@ -2,9 +2,18 @@
 	box-sizing: border-box;
 }
 
+/*-- loading --*/
+.fondoLoading{
+	background-image: url("../img/shuffle.gif");
+	background-size: cover;
+	min-height: 100vh;
+	position: relative;
+}
+
+
 /*index*/
 .bg{
-	background-image: url(../img/resize-img.jpg);
+	background-image: url(../img/fondo2.jpg);
 	top: 0;
 	left: 0;
 	background-size: cover;
@@ -67,27 +76,14 @@
 	background-color: #46a08a;
 	border-color: 1px white;
 }
-
-#search-form, .form-control {
-    margin-bottom: 20px;
+<<<<<<< HEAD
+.mt{
+	margin: 10% 0;
 }
 
-.cover {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    background-size: cover;
+.m-46{
+	margin-top: 46%;
 }
-
-.cover:hover {
-    cursor: pointer;
-}
-
-.cover.playing {
-    border: 5px solid #e45343;
-}
-
-/*música*/
 .foto-perfil{
 	width: 80%;
 	height: auto;
@@ -97,6 +93,7 @@
 .foto-perfil img{
 	width: 100%;
 	height: auto;
+	border-radius: 50%;
 }
 .buscador{
 	margin: 8% 0 0 0;
@@ -108,99 +105,129 @@
 	background-color: black;
 }
 
-/*-- Search --*/
-#search-form, .form-control {
-	margin-bottom: 20px;
+.none{
+	display: none;
 }
 
+.absolute{
+	background-color: rgba(0,0,0,.6);
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+#menu{
+	position: absolute;
+	top: 0;
+	bottom: 0px;
+	right: 40%;
+	left: 0;
+	background-color: gray;
+	z-index: 3;
+}
+.lista{
+	color: white;
+	font-size: 15px;
+	padding: 8px 0 8px 10px;
+	background-color: #46a08a;
+}
+.texto-lista{
+	display: inline-block;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+/*-- Search --*/
 .cover {
 	width: 130px;
 	height: 130px;
 	display: inline-block;
 	background-size: cover;
 }
-
 .cover:hover {
 	cursor: pointer;
 }
-
+.input-group-addon{
+	padding: 3px 8px;
+	border-radius: 15px;
+	color: black;
+}
 .cover.playing {
 	border: 5px solid #46A08A;
 }
-.titulo-sugerencias{
-	margin: 10px 0 15px 0;
-}
-.row-resultados{
-	margin-top: 5px;
+.bg-buscador{
+	background-color: black;
 }
 
 .main {
-    flex: 1;
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 0 20px;
+	flex: 1;
+	margin: 20px auto;
+	max-width: 800px;
+	padding: 0 20px;
 }
 
 ul {
-    margin-left: 30px;
+	margin-left: 30px;
 }
 .action, .recognized {
-    padding: 10px;
-    position: relative;
-    margin-bottom: 10px;
-    width:80%;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 10px;
+	width:80%;
 }
 .action {
-    text-align: right;
-    background-color: #ddd;
-    margin-left:20%;
-    border-radius: 5px 5px 0 5px;
+	text-align: right;
+	background-color: #ddd;
+	margin-left:20%;
+	border-radius: 5px 5px 0 5px;
 }
 .action:after {
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-width: 18px;
-    border-style: solid;
-    border-color: transparent transparent #ddd transparent;
-    bottom: 0px;
-    right: -17px;
+	content:"";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 18px;
+	border-style: solid;
+	border-color: transparent transparent #ddd transparent;
+	bottom: 0px;
+	right: -17px;
 }
 .recognized {
-    text-align: left;
-    background-color: #eee;
-    font-weight: bold;
-    border-radius: 5px 5px 5px 0;
+	text-align: left;
+	background-color: #eee;
+	font-weight: bold;
+	border-radius: 5px 5px 5px 0;
 }
 .recognized:after {
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-width: 18px;
-    border-style: solid;
-    border-color: transparent transparent #eee transparent;
-    bottom: 0px;
-    left: -17px;
+	content:"";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 18px;
+	border-style: solid;
+	border-color: transparent transparent #eee transparent;
+	bottom: 0px;
+	left: -17px;
 }
 .recognized > div:before {
-    content: open-quote
+	content: open-quote
 }
 .recognized > div:after {
-    content: close-quote
+	content: close-quote
 }
 #conversation {
-    padding: 20px;
+	padding: 20px;
 }
 #conversation::before {
-    content:"";
-    height: 1px;
-    width: 200px;
-    background-color: #ddd;
-    display: block;
-    margin: 10px auto;
+	content:"";
+	height: 1px;
+	width: 200px;
+	background-color: #ddd;
+	display: block;
+	margin: 10px auto;
 }
 #conversation img {
-    margin-top: 5px;
+	margin-top: 5px;
 }
