@@ -4,10 +4,11 @@
 
 /*-- loading --*/
 .fondoLoading{
-	background-image: url("../img/shuffle.gif");
+	background: url("../img/shuffle.gif");
 	background-size: cover;
 	min-height: 100vh;
 	position: relative;
+	min-width: 100vw;
 }
 
 
@@ -198,7 +199,7 @@ ul {
 }
 .recognized {
 	text-align: left;
-	background-color: #eee;
+	background-color: #46A08A;
 	font-weight: bold;
 	border-radius: 5px 5px 5px 0;
 }
@@ -209,7 +210,7 @@ ul {
 	height: 0;
 	border-width: 18px;
 	border-style: solid;
-	border-color: transparent transparent #eee transparent;
+	border-color: transparent transparent #46A08A transparent;
 	bottom: 0px;
 	left: -17px;
 }
@@ -226,7 +227,7 @@ ul {
 	content:"";
 	height: 1px;
 	width: 200px;
-	background-color: #ddd;
+	background-color: #46A08A;
 	display: block;
 	margin: 10px auto;
 }
