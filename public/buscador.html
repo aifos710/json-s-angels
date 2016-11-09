@@ -6,6 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/cached.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body class="bg-buscador">
@@ -19,13 +20,23 @@
 				<div class="col-xs-9">
 					<form id="search-form">
 						<div class="input-group buscador">
-							<span class="input-group-addon" id="buscar"><i class="glyphicon glyphicon-search"></i></span>
-							<input type="text" id="query" class="form-control" placeholder="Busca tu artista">
-							<span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-headphones"></i></span>
+							<span class="input-group-addon" id="search-form"><i class="glyphicon glyphicon-search"></i></span>
+							<input type="text" id="query" class="form-control" placeholder="Ingresa el nombre de tu artista...">
+							<span class="input-group-addon" id="searchVoice"><i class="glyphicon glyphicon-headphones"></i></span>
 						</div>
 					</form>
 				</div>
 			</div>
+			<main>
+				<div id="commands">
+					   <h2>Voice commands</h2>
+					<ul>
+						<li>Play {song name}</li>
+						<li>Play {song name} by {artist name}</li>
+					</ul>
+				</div>
+				<div id="conversation"></div>
+			</main>
 			<div class="row row-resultados">
 				<div class="col-xs-12">
 					<div id="resultados"></div>
@@ -69,11 +80,12 @@
 
 		<script type="text/javascript" src="js/handlebars-v4.0.0.js"></script>
 		<script type="text/x-handlebars-template" id="resultados-template">
-{{#each albums.items}}
-<div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
-{{/each}}
+			{{#each albums.items}}
+			<div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
+			{{/each}}
 		</script>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/annyang.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/buscador.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>

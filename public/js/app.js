@@ -12,7 +12,7 @@ var cargar= function(){
         $("#logo-usuario").attr("src", src);
         $("#user").attr("src",src);
     }
-    
+
     function validarNombreAp(evento){
         var ascii = evento.keyCode;
         if (ascii == 8 || ascii == 32 || (ascii >= 65 && ascii <= 90 )|| (ascii >= 97 && ascii <= 122 )) {
@@ -50,8 +50,8 @@ var cargar= function(){
         FB.init({
             appId      : app_id,
             status     : true,
-            cookie     : true, 
-            xfbml      : true, 
+            cookie     : true,
+            xfbml      : true,
             version    : 'v2.1'
         });
         FB.getLoginStatus(function(response) {
@@ -71,7 +71,7 @@ var cargar= function(){
 
     if (confirm("¿Está seguro?"))
       facebookLogout();
-    else 
+    else
       return false;
     });
 
