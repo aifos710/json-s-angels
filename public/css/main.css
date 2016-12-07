@@ -135,6 +135,7 @@
 	left: 0;
 	background-color: gray;
 	z-index: 3;
+	width: 400px;
 }
 .lista{
 	color: white;
